@@ -32,6 +32,9 @@ setInterval(countDown, 1000);
 setTimeout(function () {
   countdown.style.display = "flex";
   preloader.remove();
-  year.style.opacity = "0.2";
-}, 3000);
+}, 5000);
 
+setTimeout(function () {
+    year.style.opacity = "0.2";
+
+}, 2000);
