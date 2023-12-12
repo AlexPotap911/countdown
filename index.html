@@ -11,9 +11,12 @@
 <body>
 <div class="container">
     <div class="countdown-wrapper">
-      <h1 class="countdoun-title">... left until the New Year</h1>
+      <h1 class="countdown-title">... left until the New Year</h1>
+      <div class="preloader" id="preloader">
+              <div class="lds-ripple"><div></div><div></div></div>
+          </div>
       <div class="year" id="year"></div>
-      <div class="contdown" id="countdown">
+      <div class="countdown" id="countdown">
     <div class="time-block">
       <div class="days-block" id="days">00</div>
       <span class="time-text">days</span>
@@ -31,9 +34,7 @@
       <span class="time-text">seconds</span>
     </div>
   </div>
-  <div class="preloader" id="preloader">
-              <div class="lds-ripple"><div></div><div></div></div>
-          </div>
+  
     </div>
 </div>
  <script src="./js/main.js"></script>
