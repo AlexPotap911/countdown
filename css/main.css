@@ -44,7 +44,9 @@ body::after {
 }
 
 .countdown {
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   opacity: 0;
   transition: opacity 2s ease-in;
 }
@@ -76,7 +78,6 @@ body::after {
 .time-text {
   font-size: 36px;
 }
-
 .seconds-block{
   width: 40px;
 }
