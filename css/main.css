@@ -77,6 +77,10 @@ body::after {
   font-size: 36px;
 }
 
+.seconds-block{
+  width: 40px;
+}
+
 /* Preloader */
 
 .preloader {
