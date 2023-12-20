@@ -10,7 +10,7 @@ const currentYear = new Date().getFullYear();
 
 year.innerText = currentYear + 1;
 
-function countDown() {
+function updateCounter() {
   const currentTime = new Date();
   const nextYear = new Date(`January 01 ${currentYear + 1} 00:00:00 `);
   const diff = nextYear - currentTime;
@@ -25,9 +25,9 @@ function countDown() {
   minutes.innerText = leftMinutes < 10 ? "0" + leftMinutes : leftMinutes;
   seconds.innerText = leftSeconds < 10 ? "0" + leftSeconds : leftSeconds;
 }
-countDown();
+updateCounter();
 
-setInterval(countDown, 1000);
+setInterval(updateCounter, 1000);
 
 setTimeout(function () {
   preloader.style.opacity = "0";
